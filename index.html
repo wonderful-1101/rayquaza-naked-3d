@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>RAYQUAZA · 裸眼 3D 破屏互动</title>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+
+    <div class="loading-veil" id="loadingVeil">
+      <div class="loading-title">RAYQUAZA · OZONE SPHERE</div>
+      <div class="loading-bar"><span id="loadingFill"></span></div>
+      <div class="loading-sub" id="loadingText">正在载入高精度裂空座 3D 模型...</div>
+    </div>
+
+    <div class="bezel-ui" id="bezelUi">
+      <div class="whisper" id="whisper">
+        点击或拖动画面任意位置，裂空座将转向游动并破框而出
+      </div>
+      <div class="controls">
+        <button class="chip-btn" id="surgeBtn" type="button">破屏俯冲</button>
+        <button class="chip-btn" id="cruiseBtn" type="button">自由巡航</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
